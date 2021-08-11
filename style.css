@@ -87,6 +87,10 @@ h2{
 h3{
     margin-bottom: 15px;
 }
+
+h5{
+    color:  hsl(233, 8%, 62%);
+}
 img{
     max-width: 100%;
     
@@ -159,14 +163,11 @@ a{
     background:   hsl(220, 16%, 96%);
     padding-left: 10vw;
     padding-right: 10vw;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-.latest-articles-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-}
+
+
 
 
 
@@ -240,6 +241,9 @@ li:hover{
         font-weight: 700;
         
     }
+    h4{
+        padding: 0 20px;
+    }
     .middle-btn{
         display: flex;
         justify-content: center;
@@ -258,9 +262,17 @@ li:hover{
     }
     .second-grid{
         grid-template-columns:  1fr;
+        place-items: center;
     }
     .latest-articles-grid{
         grid-template-columns:  1fr;
+    }
+    
+    
+    
+    .latest-articles-grid> h4,h5,p{
+        padding: 0 20px;
+        margin: 10px 0;
     }
     .footer-flex{
         flex-direction: column;
@@ -269,12 +281,22 @@ li:hover{
         text-align: center;
     }
     .first-div{
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-top: 70px;
         z-index: 4;
 
     }
     .second-header{
         margin-top: 60px;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    .svg-container > img{
+        margin: auto;
+        
     }
 }
